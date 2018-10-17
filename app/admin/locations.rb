@@ -2,7 +2,7 @@ ActiveAdmin.register Location do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-# permit_params :list, :of, :attributes, :on, :model
+ permit_params :location_number, :longitude, :latitute, :elevation, :rock_type, :mineralogy, :strike, :dip, :structural_trenddescription, :images, :group_id
 #
 # or
 #

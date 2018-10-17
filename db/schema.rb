@@ -57,10 +57,10 @@ ActiveRecord::Schema.define(version: 2018_10_17_140243) do
     t.string "dip"
     t.string "structural_trenddescription"
     t.string "images"
-    t.integer "user_id"
+    t.integer "group_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_locations_on_user_id"
+    t.index ["group_id"], name: "index_locations_on_group_id"
   end
 
   create_table "projects", force: :cascade do |t|
