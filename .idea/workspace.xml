@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5823e0c3-be81-4f19-88b2-9bce78817f18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/admin/groups.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/groups.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/projects.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/projects.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20181017110608_create_locations.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20181017110608_create_locations.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-    </list>
+    <list default="true" id="5823e0c3-be81-4f19-88b2-9bce78817f18" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -31,13 +26,13 @@
         <counts>
           <entry key="Gemfile" value="14" />
           <entry key="jbuilder" value="14" />
-          <entry key="rb" value="567" />
+          <entry key="rb" value="613" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Ruby" value="595" />
+          <entry key="Ruby" value="641" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -49,7 +44,7 @@
           <entry key="jbuilder" value="10" />
           <entry key="key" value="2" />
           <entry key="lock" value="4" />
-          <entry key="rb" value="168" />
+          <entry key="rb" value="170" />
           <entry key="yml" value="4" />
         </counts>
       </usages-collector>
@@ -58,7 +53,7 @@
           <entry key="Enforced Plain Text" value="1" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="RHTML" value="6" />
-          <entry key="Ruby" value="185" />
+          <entry key="Ruby" value="187" />
           <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
@@ -67,12 +62,16 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20181017140243_create_active_admin_comments.rb">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/app/admin/groups.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/groups.rb">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/admin/locations.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
@@ -108,11 +107,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/location.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="49" selection-start-line="49" selection-end-line="62" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -133,11 +141,6 @@
               <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20181017105700_create_groups.rb">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -181,8 +184,9 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/admin/projects.rb" />
-        <option value="$PROJECT_DIR$/app/admin/groups.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20181017110608_create_locations.rb" />
+        <option value="$PROJECT_DIR$/app/admin/groups.rb" />
+        <option value="$PROJECT_DIR$/app/admin/locations.rb" />
       </list>
     </option>
   </component>
@@ -388,25 +392,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539765937239</updated>
-      <workItem from="1539765938582" duration="18161000" />
+      <workItem from="1539765938582" duration="18407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18161000" />
+    <option name="totallyTimeSpent" value="18407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32916668" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
@@ -498,13 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
@@ -641,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/locations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -663,13 +652,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20181017140238_devise_create_admin_users.rb">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/groups.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20181017110746_create_projects.rb">
       <provider selected="true" editor-type-id="text-editor" />
@@ -688,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/projects.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/project.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -706,6 +681,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="49" selection-start-line="49" selection-end-line="62" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/projects.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/groups.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/locations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
