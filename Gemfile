@@ -8,7 +8,7 @@ gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # gem 'mini_magick', '~> 4.8'
 
@@ -24,6 +24,7 @@ end
 group :development do
   gem 'sqlite3'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'letter_opener', '~> 1.6'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
