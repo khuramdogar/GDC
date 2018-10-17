@@ -1,4 +1,5 @@
 class Users::SessionsController < Devise::SessionsController
+  skip_before_action :verify_signed_out_user, only: :destroy
 
   def create
     @user = User.find_by_email(params[:email])
@@ -21,7 +22,6 @@ class Users::SessionsController < Devise::SessionsController
   end
 
   def destroy
-
     @user = User.find_by_authentication_token(request.headers[:stoken])
 
     if @user.present?
