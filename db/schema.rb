@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_17_091830) do
+ActiveRecord::Schema.define(version: 2018_10_17_110746) do
 
   create_table "auths", force: :cascade do |t|
     t.integer "status", default: 0, null: false
@@ -20,6 +20,39 @@ ActiveRecord::Schema.define(version: 2018_10_17_091830) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_auths_on_user_id"
+  end
+
+  create_table "groups", force: :cascade do |t|
+    t.integer "project_id"
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_groups_on_project_id"
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.integer "location_number"
+    t.integer "latitute"
+    t.integer "longitude"
+    t.integer "elevation"
+    t.string "rock_type"
+    t.string "mineralogy"
+    t.string "strike"
+    t.string "dip"
+    t.string "structural_trenddescription"
+    t.string "images"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_locations_on_user_id"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string "title"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
   create_table "sessions", force: :cascade do |t|
@@ -39,8 +72,10 @@ ActiveRecord::Schema.define(version: 2018_10_17_091830) do
     t.integer "matric_marks"
     t.integer "user_status", default: 1, null: false
     t.string "name"
+    t.integer "groups_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["groups_id"], name: "index_users_on_groups_id"
   end
 
 end

@@ -21,4 +21,3 @@ class Auth::TokenValidationsController < ApplicationController
   end
 
 end
-

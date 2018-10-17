@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location_number: 1
+  latitute: 1
+  longitude: 1
+  elevation: 1
+  rock_type: MyString
+  mineralogy: MyString
+  strike: MyString
+  dip: MyString
+  structural_trenddescription: MyString
+  images: MyString
+  references: 
+
+two:
+  location_number: 1
+  latitute: 1
+  longitude: 1
+  elevation: 1
+  rock_type: MyString
+  mineralogy: MyString
+  strike: MyString
+  dip: MyString
+  structural_trenddescription: MyString
+  images: MyString
+  references: 

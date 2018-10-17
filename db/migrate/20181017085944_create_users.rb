@@ -7,6 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.integer :matric_marks
       t.integer :user_status, null: false, default: 1
       t.string :name
+      t.references :groups, foreign_key: true
 
       t.timestamps
     end
