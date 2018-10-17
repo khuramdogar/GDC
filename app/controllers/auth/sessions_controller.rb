@@ -1,4 +1,4 @@
-class Auth::SessionsController < ApplicationController
+class Auth::SessionsController < ApiController
   before_action :authenticate_user, only: [:destroy,:signout]
   def create
     if params[:username].present? and params[:password].present?

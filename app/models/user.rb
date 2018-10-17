@@ -3,7 +3,6 @@ class User < ApplicationRecord
   has_one :auth , dependent: :destroy
   has_many :sessions, dependent: :destroy
   has_many :projects, dependent: :destroy
-  belongs_to :group, optional: true
 
   #validation
   validates :user_type , presence: :true ,inclusion: {in: USER_TYPE_RANGE} # 1 general, 0 admin

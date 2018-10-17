@@ -1,4 +1,4 @@
-class Auth::RegistrationsController < ApplicationController
+class Auth::RegistrationsController < ApiController
   def create
     @user = User.new(user_params)
     if @user.save
